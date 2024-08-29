@@ -1,0 +1,59 @@
+{
+    "nombre": "Juan Pérez",
+    "edad": 60,
+    "sexo": "Masculino",
+    "estado_civil": "Viudo",
+    "ocupacion": "Jubilado",
+    "direccion": "Avenida Siempre Viva 456, Monterrey, México",
+    "telefono": "+52 81 9876 5432",
+    "motivo_consulta": "Dificultad para respirar y fatiga",
+    "antecedentes_personales": {
+      "alergias": "Alergia a penicilina",
+      "cirugias_previas": "Cirugía de apendicectomía a los 30 años",
+      "fumador": "Exfumador (dejó hace 10 años)",
+      "alcohol": "Consumo moderado"
+    },
+    "historial_medico": [
+      {
+        "patologia": "EPOC",
+        "diagnostico": "Hace 8 años",
+        "medicacion_actual": "Salbutamol inhalador, uso según necesidad",
+        "sintomas": "Tos crónica, disnea progresiva"
+      },
+      {
+        "patologia": "Insuficiencia Cardíaca Congestiva",
+        "diagnostico": "Hace 2 años",
+        "medicacion_actual": [
+          "Furosemida 40 mg, una vez al día",
+          "Enalapril 10 mg, dos veces al día"
+        ],
+        "sintomas": "Edema periférico, fatiga"
+      },
+      {
+        "patologia": "Hiperlipidemia",
+        "diagnostico": "Hace 5 años",
+        "medicacion_actual": "Atorvastatina 20 mg, una vez al día",
+        "control": "Dieta baja en grasas saturadas"
+      }
+    ],
+    "examen_fisico": {
+      "peso": "80 kg",
+      "talla": "1.75 m",
+      "imc": "26.1 (Sobrepeso)",
+      "presion_arterial": "135/85 mmHg",
+      "frecuencia_cardiaca": "85 bpm",
+      "hallazgos": "Ruidos respiratorios disminuidos con sibilancias en bases pulmonares. Edema en extremidades inferiores (+2)"
+    },
+    "pruebas_diagnosticas": {
+      "espirometria": "FEV1/FVC ratio reducido",
+      "radiografia_torax": "Hiperinflación pulmonar",
+      "ecocardiograma": "Fracción de eyección del 45%"
+    },
+    "plan_tratamiento": {
+      "anadir_tiotropio": "Inhalador, una vez al día",
+      "incrementar_furosemida": "80 mg, dos veces al día si los síntomas persisten",
+      "mantener_medicacion": "Atorvastatina y Enalapril",
+      "rehabilitacion_pulmonar": "Referencia a rehabilitación pulmonar",
+      "seguimiento": "En 1 mes"
+    }
+  }

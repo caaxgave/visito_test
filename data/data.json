@@ -1,0 +1,181 @@
+{
+    "pacientes": [
+      {
+        "nombre": "María García",
+        "edad": 45,
+        "sexo": "Femenino",
+        "estado_civil": "Casada",
+        "ocupacion": "Contadora",
+        "direccion": "Calle Falsa 123, Ciudad de México, México",
+        "telefono": "+52 55 1234 5678",
+        "motivo_consulta": "Dolor abdominal persistente",
+        "antecedentes_personales": {
+          "alergias": "No alergias conocidas",
+          "cirugias_previas": "No cirugías previas",
+          "fumadora": "Social",
+          "alcohol": "Consumo ocasional"
+        },
+        "historial_medico": [
+          {
+            "patologia": "Diabetes Tipo 2",
+            "diagnostico": "Hace 5 años",
+            "medicacion_actual": "Metformina 850 mg, dos veces al día",
+            "control": "Con dieta y ejercicio"
+          },
+          {
+            "patologia": "Hipertensión Arterial",
+            "diagnostico": "Hace 3 años",
+            "medicacion_actual": "Losartán 50 mg, una vez al día",
+            "control": "Presión arterial en consultas previas: 140/90 mmHg"
+          },
+          {
+            "patologia": "Gastritis Crónica",
+            "diagnostico": "Hace 1 año",
+            "medicacion_actual": "Omeprazol 20 mg, una vez al día",
+            "control": "Síntomas controlados con dieta y medicación"
+          }
+        ],
+        "examen_fisico": {
+          "peso": "70 kg",
+          "talla": "1.60 m",
+          "imc": "27.3 (Sobrepeso)",
+          "presion_arterial": "145/95 mmHg",
+          "frecuencia_cardiaca": "80 bpm",
+          "hallazgos": "Dolor a la palpación en epigastrio, sin signos de abdomen agudo"
+        },
+        "pruebas_diagnosticas": {
+          "hemoglobina_A1c": "7.2%",
+          "perfil_lipidico": {
+            "colesterol_total": "210 mg/dL",
+            "LDL": "130 mg/dL",
+            "HDL": "40 mg/dL",
+            "trigliceridos": "150 mg/dL"
+          },
+          "ecografia_abdominal": "Hallazgos compatibles con gastritis, sin evidencia de úlceras o masas"
+        },
+        "plan_tratamiento": {
+          "ajuste_metformina": "1000 mg dos veces al día",
+          "ajuste_losartan": "100 mg al día",
+          "continuar_omeprazol": "Y dieta baja en grasas y azúcares",
+          "seguimiento": "En 3 meses",
+          "recomendaciones": "Aumento de actividad física: 30 minutos de caminata diaria"
+        }
+      },
+      {
+        "nombre": "Juan Pérez",
+        "edad": 60,
+        "sexo": "Masculino",
+        "estado_civil": "Viudo",
+        "ocupacion": "Jubilado",
+        "direccion": "Avenida Siempre Viva 456, Monterrey, México",
+        "telefono": "+52 81 9876 5432",
+        "motivo_consulta": "Dificultad para respirar y fatiga",
+        "antecedentes_personales": {
+          "alergias": "Alergia a penicilina",
+          "cirugias_previas": "Cirugía de apendicectomía a los 30 años",
+          "fumador": "Exfumador (dejó hace 10 años)",
+          "alcohol": "Consumo moderado"
+        },
+        "historial_medico": [
+          {
+            "patologia": "EPOC",
+            "diagnostico": "Hace 8 años",
+            "medicacion_actual": "Salbutamol inhalador, uso según necesidad",
+            "sintomas": "Tos crónica, disnea progresiva"
+          },
+          {
+            "patologia": "Insuficiencia Cardíaca Congestiva",
+            "diagnostico": "Hace 2 años",
+            "medicacion_actual": [
+              "Furosemida 40 mg, una vez al día",
+              "Enalapril 10 mg, dos veces al día"
+            ],
+            "sintomas": "Edema periférico, fatiga"
+          },
+          {
+            "patologia": "Hiperlipidemia",
+            "diagnostico": "Hace 5 años",
+            "medicacion_actual": "Atorvastatina 20 mg, una vez al día",
+            "control": "Dieta baja en grasas saturadas"
+          }
+        ],
+        "examen_fisico": {
+          "peso": "80 kg",
+          "talla": "1.75 m",
+          "imc": "26.1 (Sobrepeso)",
+          "presion_arterial": "135/85 mmHg",
+          "frecuencia_cardiaca": "85 bpm",
+          "hallazgos": "Ruidos respiratorios disminuidos con sibilancias en bases pulmonares. Edema en extremidades inferiores (+2)"
+        },
+        "pruebas_diagnosticas": {
+          "espirometria": "FEV1/FVC ratio reducido",
+          "radiografia_torax": "Hiperinflación pulmonar",
+          "ecocardiograma": "Fracción de eyección del 45%"
+        },
+        "plan_tratamiento": {
+          "anadir_tiotropio": "Inhalador, una vez al día",
+          "incrementar_furosemida": "80 mg, dos veces al día si los síntomas persisten",
+          "mantener_medicacion": "Atorvastatina y Enalapril",
+          "rehabilitacion_pulmonar": "Referencia a rehabilitación pulmonar",
+          "seguimiento": "En 1 mes"
+        }
+      },
+      {
+        "nombre": "Ana López",
+        "edad": 35,
+        "sexo": "Femenino",
+        "estado_civil": "Soltera",
+        "ocupacion": "Diseñadora gráfica",
+        "direccion": "Calle del Arte 789, Guadalajara, México",
+        "telefono": "+52 33 5678 9101",
+        "motivo_consulta": "Dolor en articulaciones y fatiga persistente",
+        "antecedentes_personales": {
+          "alergias": "Alergia al polen",
+          "cirugias_previas": "No cirugías previas",
+          "fumadora": "No",
+          "alcohol": "No consume"
+        },
+        "historial_medico": [
+          {
+            "patologia": "Artritis Reumatoide",
+            "diagnostico": "Hace 3 años",
+            "medicacion_actual": "Metotrexato 15 mg, una vez a la semana; Naproxeno 500 mg, dos veces al día según necesidad",
+            "sintomas": "Dolor y rigidez matutina en manos y rodillas"
+          },
+          {
+            "patologia": "Hipotiroidismo",
+            "diagnostico": "Hace 2 años",
+            "medicacion_actual": "Levotiroxina 75 mcg, una vez al día",
+            "control": "Regular con endocrinólogo"
+          },
+          {
+            "patologia": "Ansiedad Generalizada",
+            "diagnostico": "Hace 1 año",
+            "medicacion_actual": "Sertralina 50 mg, una vez al día",
+            "terapia": "Terapia cognitivo-conductual en curso"
+          }
+        ],
+        "examen_fisico": {
+          "peso": "60 kg",
+          "talla": "1.65 m",
+          "imc": "22.0 (Normal)",
+          "presion_arterial": "120/80 mmHg",
+          "frecuencia_cardiaca": "75 bpm",
+          "hallazgos": "Hinchazón y dolor a la palpación en articulaciones metacarpofalángicas"
+        },
+        "pruebas_diagnosticas": {
+          "TSH": "3.5 mIU/L (dentro de límites controlados con medicación)",
+          "factor_reumatoide": "Positivo",
+          "ANA": "Positivos"
+        },
+        "plan_tratamiento": {
+          "continuar_medicacion": "Metotrexato y Naproxeno según necesidad",
+          "ajuste_levotiroxina": "Mantener y ajustar dosis según niveles de TSH",
+          "continuar_sertralina": "Y terapia",
+          "referencia_reumatologo": "Para evaluación y posible ajuste de tratamiento",
+          "seguimiento": "En 2 meses"
+        }
+      }
+    ]
+  }
+  
