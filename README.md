@@ -1,12 +1,18 @@
-# RAG for patients' medical history
+# Visito task: Chatbot with RAG for Conair Mexico
 
-## Clone repository
+## Development
+
+## Evaluation
+
+## Run Instructions
+
+### Clone repository
 
 ```
 git clone https://github.com/caaxgave/llm-med
 ```
 
-## Install
+### Install
 
 Create a python virtual environment, and activate it.
 
@@ -23,12 +29,12 @@ cd ../..
 pip install -r requirements.txt
 ```
 
-## Run
+### Run
 
-Run the chatbot by runing `main.py` and input your inqueries.
+Run the chatbot by runing `app.py` and input your inqueries.
 
 ```
-python main.py
+python app.py
 ```
 
 
