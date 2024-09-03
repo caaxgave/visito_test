@@ -10,7 +10,19 @@ from aiohttp import ClientSession
 
 
 async def fetch(session, url):
-    """Fetch the content of a URL asynchronously and handle 404s."""
+    """
+        Asynchronously fetches the HTML content of a URL.
+
+        This function makes an HTTP GET request to the specified URL using an asynchronous session.
+        It handles common HTTP errors and returns the response text if successful.
+
+        Args:
+            session (object): The active session for making HTTP requests.
+            url (str): The URL to fetch.
+
+        Returns:
+            str or None: The HTML content of the page if the request is successful, otherwise None.
+    """
     try:
         async with session.get(url) as response:
             if response.status == 404:
@@ -29,7 +41,19 @@ def is_valid(url):
 
 
 async def get_all_website_links(session, url):
-    """Returns all URLs that is found on `url` in which it belongs to the same website."""
+    """
+        Asynchronously retrieves all valid internal links from a given webpage.
+
+        This function fetches the HTML content of the specified URL, parses it to extract
+        all anchor tags, and collects valid, unique internal links belonging to the same domain.
+
+        Args:
+            session (object): The active session for making HTTP requests.
+            url (str): The URL of the webpage to scrape for links.
+
+        Returns:
+            set: A set of valid, unique internal links found on the webpage.
+    """
     urls = set()
     domain_name = urlparse(url).netloc
 
@@ -56,7 +80,20 @@ async def get_all_website_links(session, url):
 
 
 async def crawl(url, max_urls=400):
-    """Asynchronous crawler that collects all internal URLs from a website."""
+    """
+        Asynchronously crawls the website, collecting valid URLs up to a specified limit.
+
+        This function starts from a given URL and traverses the website to gather internal links,
+        ignoring media files. It continues until the maximum number of URLs is reached or no more
+        links are found.
+
+        Args:
+            url (str): The starting URL for the crawl.
+            max_urls (int, optional): The maximum number of URLs to crawl. Defaults to 400.
+
+        Returns:
+            list: A list of valid URLs discovered during the crawl.
+    """
 
     print("CRAWLING...")
     visited_urls = set()
@@ -85,7 +122,15 @@ async def crawl(url, max_urls=400):
 
     return valid_urls
 
+
 def save_as_json(valid_urls):
+    """
+        Saves a list of valid URLs to a JSON file.
+
+        Args:
+            valid_urls (list): The list of URLs to save.
+
+    """
     with open("all_valid_urls.json", "w") as file:
         json.dump(valid_urls, file)
 
@@ -94,7 +139,6 @@ if __name__ == '__main__':
     url = "https://www.conairmexico.com/"
 
     start_time = time.time()
-    print("CRAWLING...")
     all_links = asyncio.run(crawl(url))
     total_time = time.time() - start_time
     print("SAVING AS JSON...")
