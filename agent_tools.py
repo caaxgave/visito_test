@@ -54,6 +54,8 @@ def create_vector_store(all_links):
                 for the table data.
     """
 
+    print("INDEXING...")
+
     contact_url = "https://www.conairmexico.com/contact-us.html"
     documents = html_loader_product_data(all_links)
     all_tables = get_table_data(contact_url)
@@ -65,7 +67,6 @@ def create_vector_store(all_links):
     splits = splitter.split_documents(documents)
 
     ## INDEXING: EMBEDDINGS AND VECTOR STORE
-    print("INDEXING...")
     embeddings = OpenAIEmbeddings()
     vector_store_gral = FAISS.from_documents(splits, embedding=embeddings)
     vector_store_tables = FAISS.from_documents([tables_doc], embedding=embeddings)
