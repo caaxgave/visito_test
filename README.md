@@ -12,13 +12,13 @@ This task aims to develop a chatbot that can retrieve data from www.conairmexico
 
 The above diagram represents the solution proposal for solving the task. This solution is composed of 5 modules: Crawling & Scrapping, Document Loaders, Indexing, Assistant and Interface. 
 
-* **_Crawling & Scrapping_**: This module is composed of two sub-modules, the _Crawling module_ allow the system to crawl/fetch all the sub-pages from the website root (www.conairmexico.com), and _Scrapping module_ aids to extract unstructured data. The _Scrapping module_ was proposed as a simple version of fetching structured information from tables as the ones found in www.conairmexico.com/contact-us.html. 
+* **_Crawling & Scrapping_**: This module is composed of two sub-modules, the _Crawling module_ allow the system to crawl/fetch all the sub-pages from the website root (www.conairmexico.com), and _Scrapping module_ aids to extract unstructured data. The _Scrapping module_ was proposed as a simple version of fetching structured information from tables, as the ones found in www.conairmexico.com/contact-us.html, and product info such as price, description, etc. 
 
 * **_Document Loaders_**: In this module, raw data from each sub-page, is loaded in two different ways. The first loader is in charge of loading HTML, transform as human readable text. The second is loaded as JSON-like format with information from unstructured pages. 
 
-* **_Indexing_**: First all the context is embedded in a vector-like way using an OpenAI embedding function, then the embedding is stored in a so called vector store. For this purpose it has been used FAISS database in local.
+* **_Indexing_**: First, all the context is embedded in a vector-like way using an OpenAI embedding function, then the embedding is stored in a so called vector store. For this purpose it has been used FAISS database in local.
 
-* **_Assistant_**: The Assistant is made one principal actor called Agent, and 4 secondary tools 1) an LLM model, 2) System Prompt, 3) Retriever, and 4) Chat History. The LLM is a pretrained model GPT-3.4 (OpenAI API grabbed), the System Prompt is the initial instruction for the Assistant (behavor), the Retriever is the tool for searching (by similarity search algorithm) information in all the data loaded from the website, and the Chat History saves the conversation for feed the Context Prompt for keeping the context. Finally, the Agent is in charge of calling the tools as needed, and to give a response according with the user query.
+* **_Assistant_**: The Assistant is made one principal actor called Agent, and 4 secondary tools: 1) an LLM model, 2) System Prompt, 3) Retriever, and 4) Chat History. The LLM is a pretrained model GPT-3.5 (OpenAI API grabbed), the System Prompt is the initial instruction for the Assistant (behavor), the Retriever is the tool for searching (by similarity search algorithm) information in all the data loaded from the website, and the Chat History saves the conversation for feed the Context Prompt for keeping the context. Finally, the Agent is in charge of calling the tools as needed, and to give a response according with the user query.
 
 * **_Interface_**: The Interface has been made to allow test the chatbot in a friendly manner.
 
